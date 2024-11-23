@@ -11,6 +11,13 @@ export const routes: Routes = [
         path: '',
         component: HomeComponent,
       },
+      {
+        path: 'reflective-video',
+        loadComponent: () =>
+          import(
+            '../app/pages/reflective-video/reflective-video.component'
+          ).then((page) => page.ReflectiveVideoComponent),
+      },
     ],
   },
   {
