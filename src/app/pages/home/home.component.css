@@ -1,0 +1,6 @@
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 (altura/ancho * 100) */
+  height: 0;
+  overflow: hidden;
+}
