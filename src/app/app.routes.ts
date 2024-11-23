@@ -19,7 +19,7 @@ export const routes: Routes = [
           ).then((page) => page.ReflectiveVideoComponent),
       },
       {
-        path: 'diapositives',
+        path: 'classroom-activities',
         loadComponent: () =>
           import('../app/pages/diapositives/diapositives.component').then(
             (page) => page.DiapositivesComponent
