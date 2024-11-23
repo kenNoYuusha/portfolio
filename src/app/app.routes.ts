@@ -18,6 +18,13 @@ export const routes: Routes = [
             '../app/pages/reflective-video/reflective-video.component'
           ).then((page) => page.ReflectiveVideoComponent),
       },
+      {
+        path: 'diapositives',
+        loadComponent: () =>
+          import('../app/pages/diapositives/diapositives.component').then(
+            (page) => page.DiapositivesComponent
+          ),
+      },
     ],
   },
   {
