@@ -25,6 +25,20 @@ export const routes: Routes = [
             (page) => page.DiapositivesComponent
           ),
       },
+      {
+        path: 'glossary',
+        loadComponent: () =>
+          import('../app/pages/glossary/glossary.component').then(
+            (page) => page.GlossaryComponent
+          ),
+      },
+      {
+        path: 'extra-pieces',
+        loadComponent: () =>
+          import('../app/pages/extra-pieces/extra-pieces.component').then(
+            (page) => page.ExtraPiecesComponent
+          ),
+      },
     ],
   },
   {
